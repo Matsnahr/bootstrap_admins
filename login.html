@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/boostrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="stylesheet" href="asset/images/mutu.jpg" image="/x-icon">
+    <style>
+        #vector{
+            background-image:url(asset/images/login-illustration.png);
+        }
+        #font{
+            font-size: 12px;
+        }
+        input:focus{
+            outline: none;
+        }
+        input:hover{
+            border: 0;
+        }
+        input:active{
+            border: 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="sidebar">
+                <!-- logo -->
+                <div class="d-flex flex-column bd-highlight mb-3 ">
+                    <img src="asset/images/logo-kartu-prakerja (1).png" alt="logo" width="160" class="mt-5" >
+                    <div>
+                        <!-- login info -->
+                        <div class="d-flex flex-column mt-5">
+                            <h5 class="text-primary">login</h5>
+                            <p class="lead">Bagi kamu yang sudah terdaftar,silahkan login</p>
+                        </div>
+                        <!-- login form -->
+                        <div class="d-flex flex-column">
+                            <form>
+                                <div class="d-flex.flex-column shadow p-3 mb-5 bg-white rounded">
+                                    <small>Email</small>
+                                    <div class="d-flx flex-row">
+                                        <input id="font" class="border-0" type="text" placeholder="masukan Email" style="width: 200px;">
+                                    </div>
+                                    <hr class="m-1">
+                                    <small>Password</small>
+                                    <div class="d-flex flex-row">
+                                        <input id="font" class="border-0" type="password" placeholder="masukan password" style="width: 250px;">
+                                        <i class="far fa-eye position-relative text-muted" style="margin-left: 137px;"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- login additional -->
+                        <div class="d-flex flex-row justify-content-between">
+                            <form><input type="checkbox"><small class="ml-2">Ingat saya</small></form>
+                            <div>
+                                <a href="#"><small>Lupa password</small></a>
+                            </div>
+                        </div>
+                        <!-- register -->
+                        <div class="d-flek-row mt-5">
+                            <button type="submit" class="btn btn-primary mr-4" data-togle="button" aria-pressed="false" >
+                                login</button>
+                            <button type="button" class="btn btn-outline-primary " data-togle="button" aria-pressed="false" data-toggle="modal" data-target="#exampleModal">
+                                Daftar</button>
+                        </div>
+                        <!-- footer -->
+                        <div class="d-flex-row">
+                            <p style="margin-top:120px; margin-left: 150px;"><small>MatsnaHIdayaturR&copy;</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 vh-100 border bg-info" id="vector">
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Data Pribadi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <!-- logo -->
+                <div class="d-flex flex-column bd-highlight mb-3 ">
+                    <img src="asset/images/logo-kartu-prakerja (1).png" alt="logo" width="160" class="mt-1" >
+                        <!-- login info -->
+                        <div class="d-flex flex-column mt-3">
+                            <h5 class="text-primary">Yuk,daftar kartu prakerja!</h5>
+                            <p class="lead">Mohon isi data di bawah ini dengan benar</p>
+                        </div>
+                        <!-- login form -->
+                        <div class="d-flex flex-column">
+                            <form>
+                                <div class="d-flex flex-column shadow p-3 mb-5 bg-white rounded">
+                                    <small>Alamat Email</small>
+                                    <input class="border-0" type="text" id="font" placeholder="alamat@email.com" style="width: 250px;">
+                                </div>
+                            </form>
+                            
+                            <form>
+                                <div class="d-flex flex-column shadow p-3 mb-5 bg-white rounded">
+                                    
+                                    <small>Password</small>
+                        
+                                    <div class="d-flex flex-row">
+                                        <input class="border-0" type="password" id="font" placeholder="gunakan 6 karakter atau lebih" style="width: 250px;">
+                                        <i class="far fa-eye position-relative mr-n5 text-muted" style="margin-left: 137px;"></i>
+                                    </div>
+                                    <hr class="m-1">
+                                    <small>Konfirmasi Password</small>
+                                    <div class="d-flex flex-row">
+                                        <input class="border-0" type="password" id="font" placeholder="konfirmasi ulang password" style="width: 250px;">
+                                        <i class="far fa-eye position-relative text-muted" style="margin-left: 150px;"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <form><input type="checkbox"><small class="ml-2">Saya menyetujui <a href="#">syarat dan ketentuan</a> dan <br> <a href="#">kebijakan privasi</a> yang berlaku</small></form>
+                    </div>
+                    <div class="mt-2">
+                        <button type="button" class="btn btn-outline-primary " data-togle="button" aria-pressed="false" data-toggle="modal" data-target="#exampleModal">
+                            Daftar</button>
+                    </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">close</buttCloseon>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- optional js -->
+    <script src="asset/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/boostrap.min.js"></script>
+    
+</body>
+</html>
